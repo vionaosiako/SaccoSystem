@@ -1,0 +1,11 @@
+.navbar{
+    background-color: #057088;
+}
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 700px;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+.nav-link{
+    font-size: 20px;
+}
