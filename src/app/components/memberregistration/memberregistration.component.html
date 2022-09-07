@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="row main">
+        <div class="col-md-7">
+            <img src="../../../assets/images/chamamember.jpg" alt="" width="100%">
+        </div>
+        <div class="col-md-5">
+            <h4 class="text-center">Members Signup Form</h4>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="InputFirstname" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="InputFirstname" placeholder="Enter your first name" [(ngModel)]="register.firstname" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="InputLastname" class="form-label">Last name</label>
+                        <input type="text" class="form-control" id="InputLastname" placeholder="Enter your last name" [(ngModel)]="register.lastname" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="InputUsername" class="form-label">Username</label>
+                        <input type="text" class="form-control" id="InputUsername" placeholder="Enter your username" [(ngModel)]="register.username" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="mb-3">
+                        <label for="InputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="InputEmail1" placeholder="Enter your email" [(ngModel)]="register.email" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="InputPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="InputPassword" placeholder="Enter your password" [(ngModel)]="register.password" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="InputPassword2" class="form-label">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Enter your password again" [(ngModel)]="register.password2" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <!-- <button type="submit" class="btn btn-primary">Add Admin</button> -->
+                    <input type="submit" class="btn  btn-primary login-btn btn-sm mb-2" (click)="registerUser()" value="Create Admin Account">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

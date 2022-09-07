@@ -1,0 +1,14 @@
+.summary{
+    height: 50vh;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+}
+.card-body{
+    background-color: #D9D9D9;
+}
+
+.core{
+    height: 30vh;
+}
