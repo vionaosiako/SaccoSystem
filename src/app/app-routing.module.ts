@@ -4,12 +4,14 @@ import { MainbarComponent } from './components/mainbar/mainbar.component';
 import { AdminregistrationComponent } from './components/adminregistration/adminregistration.component';
 import { MemberregistrationComponent } from './components/memberregistration/memberregistration.component';
 import { LoginComponent } from './components/login/login.component';
+import { MembersdetailComponent } from './components/membersdetail/membersdetail.component';
 
 const routes: Routes = [
-  { path: '', component: MainbarComponent },
+  { path: 'home', component: MainbarComponent },
   { path: 'adminregistration', component: AdminregistrationComponent },
   { path: 'memberregistration', component: MemberregistrationComponent },
-  { path: 'login', component: LoginComponent },
+  { path: '', component: LoginComponent },
+  { path: 'members', component: MembersdetailComponent},
 ];
 
 @NgModule({

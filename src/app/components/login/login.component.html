@@ -13,13 +13,13 @@
             <form>
                 <div class="mb-3">
                     <label for="InputUsername" class="form-label">Username</label>
-                    <input type="text" class="form-control" id="InputUsername" placeholder="Enter your username">
+                    <input [(ngModel)]="login.username" [ngModelOptions]="{standalone: true}" type="text" #username class="form-control" id="username" placeholder="Username">
                 </div>
                 <div class="mb-3">
                     <label for="InputPassword" class="form-label">Password</label>
-                    <input type="password" class="form-control" id="InputPassword" placeholder="Enter your password">
+                    <input [(ngModel)]="login.password" [ngModelOptions]="{standalone: true}" type="password" #password class="form-control" id="password" placeholder="Password">
                 </div>
-                <button type="submit" class="btn btn-primary">Log In</button>
+                <input type="submit" class="btn  btn-primary login-btn btn-sm mt-3" (click)="loginUser()" value="LOGIN">
             </form>
         </div>
     </div>
