@@ -13,7 +13,7 @@ export class AdminregistrationComponent implements OnInit {
 
   constructor(public signupService: SignupService, private router: Router) { }
   ngOnInit(): void {
-    this.register= {firstname:'',lastname:'',username:'',email:'',password:'', password2:''};
+    this.register= {first_name:'',last_name:'',username:'',email:'',password:'', password2:''};
   }
   goLogin() {
     this.router.navigate(['/', 'login']);

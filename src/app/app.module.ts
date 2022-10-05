@@ -13,6 +13,9 @@ import { AdminregistrationComponent } from './components/adminregistration/admin
 import { MemberregistrationComponent } from './components/memberregistration/memberregistration.component';
 import { LoginComponent } from './components/login/login.component';
 import { MembersdetailComponent } from './components/membersdetail/membersdetail.component';
+import { DataTablesModule } from 'angular-datatables';
+
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,7 @@ import { MembersdetailComponent } from './components/membersdetail/membersdetail
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    DataTablesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
