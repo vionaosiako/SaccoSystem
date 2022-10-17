@@ -9,38 +9,78 @@
             <form class="row g-3">
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="InputFirstname" class="form-label">First name</label>
-                        <input type="text" class="form-control" id="InputFirstname" placeholder="Enter your first name" [(ngModel)]="register.first_name" [ngModelOptions]="{standalone: true}">
+                        <label for="InputLastname" class="form-label">Surname</label>
+                        <input type="text" class="form-control" id="InputLastname" placeholder="Enter last name" [(ngModel)]="register.last_name" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3">
-                        <label for="InputLastname" class="form-label">Last name</label>
-                        <input type="text" class="form-control" id="InputLastname" placeholder="Enter your last name" [(ngModel)]="register.last_name" [ngModelOptions]="{standalone: true}">
+                        <label for="InputFirstname" class="form-label">First name</label>
+                        <input type="text" class="form-control" id="InputFirstname" placeholder="Enter first name" [(ngModel)]="register.first_name" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="InputOthername" class="form-label">Other name</label>
+                        <input type="text" class="form-control" id="InputOthername" placeholder="Enter other name" [(ngModel)]="register.othername" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label for="InputUsername" class="form-label">Username</label>
+                            <input type="text" class="form-control" id="InputUsername" placeholder="Enter username" [(ngModel)]="register.username" [ngModelOptions]="{standalone: true}" >
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="Inputgender" class="form-label">Gender</label>
+                            <input type="text" class="form-control" id="Inputgender" [(ngModel)]="register.gender" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <div class="mb-3">
+                            <label for="Inputdob" class="form-label">Date of birth</label>
+                            <input type="date" class="form-control" id="Inputdob" [(ngModel)]="register.date_of_birth" [ngModelOptions]="{standalone: true}">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="InputResidential_area" class="form-label">Residential area</label>
+                        <input type="text" class="form-control" id="Inputresidential_area" placeholder="Enter Residential area" [(ngModel)]="register.residential_area" [ngModelOptions]="{standalone: true}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="mb-3">
+                        <label for="Inputnational_id" class="form-label">National id</label>
+                        <input type="text" class="form-control" id="Inputnational_id" placeholder="Enter national id" [(ngModel)]="register.national_id" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="mb-3">
-                        <label for="InputUsername" class="form-label">Username</label>
-                        <input type="text" class="form-control" id="InputUsername" placeholder="Enter your username" [(ngModel)]="register.username" [ngModelOptions]="{standalone: true}">
+                        <label for="Inputphone_number" class="form-label">Phone number</label>
+                        <input type="text" class="form-control" id="Inputphone_number" placeholder="Enter phone_number" [(ngModel)]="register.phone_number" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
                 <div class="col-12">
                     <div class="mb-3">
                         <label for="InputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="InputEmail1" placeholder="Enter your email" [(ngModel)]="register.email" [ngModelOptions]="{standalone: true}">
+                        <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" [(ngModel)]="register.email" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="InputPassword" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="InputPassword" placeholder="Enter your password" [(ngModel)]="register.password" [ngModelOptions]="{standalone: true}">
+                        <input type="password" class="form-control" id="InputPassword" placeholder="Enter password" [(ngModel)]="register.password" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="mb-3">
                         <label for="InputPassword2" class="form-label">Confirm Password</label>
-                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Enter your password again" [(ngModel)]="register.password2" [ngModelOptions]="{standalone: true}">
+                        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Enter password again" [(ngModel)]="register.password2" [ngModelOptions]="{standalone: true}">
                     </div>
                 </div>
                 <div class="col-12">
