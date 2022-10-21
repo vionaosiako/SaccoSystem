@@ -23,7 +23,6 @@ export class AdminregistrationComponent implements OnInit {
     this.signupService.registerAdmin(this.register).subscribe(
       response=> {
         alert('Admin has been registered successfully!')
-        this.register.reset()
         this.goLogin()
       },
       error=> console.log (error)

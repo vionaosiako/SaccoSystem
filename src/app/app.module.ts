@@ -14,6 +14,8 @@ import { MemberregistrationComponent } from './components/memberregistration/mem
 import { LoginComponent } from './components/login/login.component';
 import { MembersdetailComponent } from './components/membersdetail/membersdetail.component';
 import { DataTablesModule } from 'angular-datatables';
+import { ContributionsMerrygoroundComponent } from './components/contributions-merrygoround/contributions-merrygoround.component';
+import { ContributionsMonthlysavingsComponent } from './components/contributions-monthlysavings/contributions-monthlysavings.component';
 
 
 
@@ -28,6 +30,8 @@ import { DataTablesModule } from 'angular-datatables';
     MemberregistrationComponent,
     LoginComponent,
     MembersdetailComponent,
+    ContributionsMerrygoroundComponent,
+    ContributionsMonthlysavingsComponent,
   ],
   imports: [
     BrowserModule,
