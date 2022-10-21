@@ -5,13 +5,17 @@ import { AdminregistrationComponent } from './components/adminregistration/admin
 import { MemberregistrationComponent } from './components/memberregistration/memberregistration.component';
 import { LoginComponent } from './components/login/login.component';
 import { MembersdetailComponent } from './components/membersdetail/membersdetail.component';
-
+import { ContributionsMerrygoroundComponent } from './components/contributions-merrygoround/contributions-merrygoround.component';
+import { ContributionsMonthlysavingsComponent } from './components/contributions-monthlysavings/contributions-monthlysavings.component';
 const routes: Routes = [
   { path: 'home', component: MainbarComponent },
   { path: 'adminregistration', component: AdminregistrationComponent },
   { path: 'memberregistration', component: MemberregistrationComponent },
   { path: '', component: LoginComponent },
   { path: 'members', component: MembersdetailComponent},
+  { path: 'merrygoroundcontribution', component: ContributionsMerrygoroundComponent},
+  { path: 'monthlysavingscontribution', component: ContributionsMonthlysavingsComponent},
+
 ];
 
 @NgModule({
