@@ -12,7 +12,7 @@ export class MembersService {
   constructor(private http:HttpClient) { }
 
   getUser(): Observable<any>{
-    return this.http.get(this.baseurl+'membermember/', {headers: this.httpHeaders}) && this.http.get(this.baseurl+'api/users/', {headers: this.httpHeaders});
+    return this.http.get(this.baseurl+'api/users/', {headers: this.httpHeaders});
   }
   getOneUser(id:number): Observable<any>{
     return this.http.get(this.baseurl+'api/users/' + id + '/', {headers: this.httpHeaders});

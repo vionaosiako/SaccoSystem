@@ -26,8 +26,6 @@ export class MembersdetailComponent implements OnInit{
               processing: true,
               lengthMenu : [5, 10, 25],
               responsive: true, // Use this attribute to enable the responsive extension
-
-              
           } 
           );
           }, 1);
