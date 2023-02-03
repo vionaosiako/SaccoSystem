@@ -46,24 +46,18 @@ export class ContributionsMonthlysavingsComponent implements OnInit {
     this.api.createMonthlySavings(this.monthlycontribution).subscribe(
       response=> {
         alert('Record Added Successfully!')
+        this.getSavings()
       },
       error=> console.log (error)
     );
 
 }
-  newMerryGoRound = () => {
-    this.api.createMerryGoRound(this.monthlycontribution).subscribe(
-      response=> {
-        alert('Record Added Successfully!')
-      },
-      error=> console.log (error)
-    );
-  }
 
   putMonthlySaving = () => {
     this.api.updateMonthlySavings(this.monthlycontribution).subscribe(
       response=> {
         alert('Record Updated Successfully!')
+        this.getSavings()
       },
       error => {
         console.log(error);
@@ -71,19 +65,8 @@ export class ContributionsMonthlysavingsComponent implements OnInit {
     );
   }
 
-  putMerryGoRound = () => {
-    this.api.updateMerryGoRound(this.monthlycontribution).subscribe(
-      response=> {
-        alert('Record Updated Successfully!')
-      },
-      error => {
-        console.log(error);
-      }
-    );
-  }
-
-  monthlySavingClicked = (donation:any) => {
-    this.api.getOneMonthlySavings(donation.id).subscribe(
+  monthlySavingClicked = (savings:any) => {
+    this.api.getOneMonthlySavings(savings.id).subscribe(
       data => {
         this.monthlycontribution = data;
       },
@@ -91,7 +74,6 @@ export class ContributionsMonthlysavingsComponent implements OnInit {
         console.log(error);
       }
     );
-    // console.log(training.id)
   }
 }
 

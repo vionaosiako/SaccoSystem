@@ -26,13 +26,13 @@ export class ContributionsService {
 
   updateMonthlySavings(monthlysavings: any): Observable<any> {
     const body = {reg_number: monthlysavings.reg_number,Amount: monthlysavings.Amount};
-    return this.http.put(this.baseurl +'contributions/monthlycontribution/' + monthlysavings.id + '/',
+    return this.http.put(this.baseurl +'contributions/monthlycontribution/' + monthlysavings.id ,
       body,{ headers: this.httpHeaders });
   }
 
   updateMerryGoRound(monthlysavings: any): Observable<any> {
     const body = {reg_number: monthlysavings.reg_number,Amount: monthlysavings.Amount,};
-    return this.http.put(this.baseurl +'contributions/merrygoroundcontribution/' + monthlysavings.id +'/',body,{ headers: this.httpHeaders });
+    return this.http.put(this.baseurl +'contributions/merrygoroundcontribution/' + monthlysavings.id ,body,{ headers: this.httpHeaders });
   }
 
   createMonthlySavings(monthlysavings: any): Observable<any>{
@@ -46,12 +46,12 @@ export class ContributionsService {
   }
 
   getOneMonthlySavings(id:number): Observable<any> {
-    return this.http.get('http://127.0.0.1:8000/contributions/monthlycontribution/' + id + '/',
+    return this.http.get('http://127.0.0.1:8000/contributions/monthlycontribution/' + id ,
     {headers: this.httpHeaders});
   }
 
   getOneMerryGoRound(receipt_ID:number): Observable<any> {
-    return this.http.get('http://127.0.0.1:8000/contributions/merrygoroundcontribution/'+ receipt_ID + '/',
+    return this.http.get('http://127.0.0.1:8000/contributions/merrygoroundcontribution/'+ receipt_ID ,
     {headers: this.httpHeaders});
   }
 }
