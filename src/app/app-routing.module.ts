@@ -7,6 +7,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MembersdetailComponent } from './components/membersdetail/membersdetail.component';
 import { ContributionsMerrygoroundComponent } from './components/contributions-merrygoround/contributions-merrygoround.component';
 import { ContributionsMonthlysavingsComponent } from './components/contributions-monthlysavings/contributions-monthlysavings.component';
+import { MessageComponent } from './components/message/message.component';
 const routes: Routes = [
   { path: 'home', component: MainbarComponent },
   { path: 'adminregistration', component: AdminregistrationComponent },
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'members', component: MembersdetailComponent},
   { path: 'merrygoroundcontribution', component: ContributionsMerrygoroundComponent},
   { path: 'monthlysavingscontribution', component: ContributionsMonthlysavingsComponent},
+  { path: 'message', component: MessageComponent},
 
 ];
 

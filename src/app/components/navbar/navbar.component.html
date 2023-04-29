@@ -12,9 +12,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/members">Members</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="#">Group Investments</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a class="nav-link" href="#">Report Statement</a>
                 </li>
@@ -30,6 +30,35 @@
                         <li><a class="dropdown-item" href="#">Sign Out</a></li>
                     </ul>
                 </li>
+                <li>
+                    <!-- Button to open the modal -->
+                    <button type="button" class="btn colorcode" data-bs-toggle="modal" data-bs-target="#messageModal">
+                        Send Message
+                    </button>
+                    <!-- Modal -->
+                    <div class="modal fade" id="messageModal" tabindex="-1" aria-labelledby="messageModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="messageModalLabel">Send Message</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <form (ngSubmit)="sendMessage()">
+                                    <div class="modal-body">
+                                        <div class="mb-3">
+                                            <label for="message">Message:</label>
+                                            <textarea id="message" [(ngModel)]="message" name="message" required class="form-control"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-primary">Send</button>
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </li>   
             </ul>
         </div>
     </div>

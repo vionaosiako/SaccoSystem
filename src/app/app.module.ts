@@ -17,6 +17,7 @@ import { DataTablesModule } from 'angular-datatables';
 import { ContributionsMerrygoroundComponent } from './components/contributions-merrygoround/contributions-merrygoround.component';
 import { ContributionsMonthlysavingsComponent } from './components/contributions-monthlysavings/contributions-monthlysavings.component';
 import { LoansComponent } from './components/loans/loans.component';
+import { MessageComponent } from './components/message/message.component';
 
 
 
@@ -35,6 +36,7 @@ import { LoansComponent } from './components/loans/loans.component';
     ContributionsMerrygoroundComponent,
     ContributionsMonthlysavingsComponent,
     LoansComponent,
+    MessageComponent,
   ],
   imports: [
     BrowserModule,
