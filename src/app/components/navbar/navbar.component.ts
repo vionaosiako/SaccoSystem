@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { SignupService } from 'src/app/services/signup.service';
 import { Router } from '@angular/router';
+import { MessageService } from 'src/app/services/message.service';
+
 
 
 @Component({
@@ -10,8 +12,24 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(public authService: SignupService, private router: Router) {
+  message!: string;
+
+  constructor(public authService: SignupService, private router: Router, private messageService: MessageService) {
     this.router.navigate(['/', '']);
+  }
+
+  sendMessage() {
+    this.messageService.sendMessage(this.message)
+      .subscribe(
+        response => {
+          console.log('Message sent successfully');
+          // Handle the response if needed
+        },
+        error => {
+          console.error('Error sending message:', error);
+          // Handle the error if needed
+        }
+      );
   }
 
   ngOnInit(): void {
