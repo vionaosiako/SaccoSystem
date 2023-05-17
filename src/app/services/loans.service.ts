@@ -18,5 +18,16 @@ export class LoansService {
       { headers: this.httpHeaders }
     );
   }
+
+  getLoanRequest(): Observable<any>{
+    return this.http.get(
+      this.baseurl+'loans/loanrequest/', 
+      {headers: this.httpHeaders});
+  }
+  getOneLoanRequest(id:number): Observable<any>{
+    return this.http.get(
+      this.baseurl+'loans/loanrequest/' + id + '/', 
+      {headers: this.httpHeaders});
+  }
 }
 
