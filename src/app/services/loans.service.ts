@@ -11,4 +11,12 @@ export class LoansService {
 
   httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
   constructor(private http:HttpClient) { }
+
+  getDashboardInfo(): Observable<any> {
+    return this.http.get(
+      this.baseurl + 'loans/getdashboard/',
+      { headers: this.httpHeaders }
+    );
+  }
 }
+
