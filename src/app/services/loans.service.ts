@@ -35,9 +35,15 @@ export class LoansService {
   }
 
   updateLoanRequest(loanrequest: any): Observable<any> {
-    const body = {id: loanrequest.id,amount_requested: loanrequest.amount_requested, purpose:loanrequest.purpose, status:loanrequest.status, payment_period_years:loanrequest.payment_period_years,user:loanrequest.user,category:loanrequest.category};
+    const body = {amount_requested: loanrequest.amount_requested, purpose:loanrequest.purpose, status:loanrequest.status, payment_period_years:loanrequest.payment_period_years,user:loanrequest.user,category:loanrequest.category};
     return this.http.put(this.baseurl +'loans/loanrequest/' +loanrequest.id ,
       body,{ headers: this.httpHeaders });
+}
+
+createLoanRequest(loanrequest: any): Observable<any>{
+  const body = {amount_requested: loanrequest.amount_requested, purpose:loanrequest.purpose, status:loanrequest.status, payment_period_years:loanrequest.payment_period_years,user:loanrequest.user,category:loanrequest.category};
+  return this.http.post(this.baseurl +'loans/loanrequest/',
+    body,{headers: this.httpHeaders});
 }
 // -------------------------------------------------------------------------------------------------------------------------------------
 // Loan Category
