@@ -18,6 +18,10 @@ export class LoansService {
       { headers: this.httpHeaders }
     );
   }
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Loan processes
+// -------------------------------------------------------------------------------------------------------------------------------------
+
 
   getLoanRequest(): Observable<any>{
     return this.http.get(
@@ -29,5 +33,19 @@ export class LoansService {
       this.baseurl+'loans/loanrequest/' + id + '/', 
       {headers: this.httpHeaders});
   }
-}
 
+  updateLoanRequest(loanrequest: any): Observable<any> {
+    const body = {id: loanrequest.id,amount_requested: loanrequest.amount_requested, purpose:loanrequest.purpose, status:loanrequest.status, payment_period_years:loanrequest.payment_period_years,user:loanrequest.user,category:loanrequest.category};
+    return this.http.put(this.baseurl +'loans/loanrequest/' +loanrequest.id ,
+      body,{ headers: this.httpHeaders });
+}
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Loan Category
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Loan Payment
+// -------------------------------------------------------------------------------------------------------------------------------------
+
+}
