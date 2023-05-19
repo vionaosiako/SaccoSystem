@@ -7,6 +7,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class LoansService {
+  getDonations // -------------------------------------------------------------------------------------------------------------------------------------
+    () {
+    throw new Error('Method not implemented.');
+  }
   baseurl = 'http://127.0.0.1:8000/';
 
   httpHeaders = new HttpHeaders({'Content-Type': 'application/json'});

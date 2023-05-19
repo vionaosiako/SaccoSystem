@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-9">
         <div class="container-flud">
-          <div class="row">
+          <div class="row" >
             <div class="row">
               <div class="col-md-4">
                 <div class="card-body">
@@ -14,7 +14,7 @@
                   <hr>
                   <div class="product">
                     <img src="../../../assets/images/activeMemebers.png" alt="" height="70px">
-                    <h5 class="card-title">8</h5>
+                    <h5 class="card-title">{{ loans['Total Members'] }}</h5>
                   </div>
                   
                 </div>
@@ -31,43 +31,43 @@
               </div>
               <div class="col-md-4">
                 <div class="card-body">
-                  <h4 class="card-text text-center">Loan Products</h4>
+                  <h4 class="card-text text-center">Total Loan</h4>
                   <hr>
                   <div class="product">
-                    <img src="../../../assets/images/loanProducts.png" alt="" height="70px" />
-                    <h5 class="card-title">5</h5>
-                  </div>
+                    <img src="../../../assets/images/totalDefaulters.png" alt="" height="70px"/>
+                    <h5 class="card-title">{{ loans['Total Loan'] }}</h5>
+                  </div>                  
                 </div>
               </div>
             </div>
           <div class="row mt-3">
             <div class="col-md-4">
               <div class="card-body">
-                <h4 class="card-text text-center">Total Defaulters</h4>
-                <hr>
-                <div class="product">
-                  <img src="../../../assets/images/totalDefaulters.png" alt="" height="70px"/>
-                  <h5 class="card-title">1</h5>
-                </div>
+                <h4 class="card-text text-center">Outstanding Loan</h4>
+                  <hr>
+                  <div class="product">
+                    <img src="../../../assets/images/loanProducts.png" alt="" height="70px" />
+                    <h5 class="card-title">{{ loans['Total Outstanding Loan'] }}</h5>
+                  </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card-body">
-                <h4 class="card-text text-center">Defaulted Amount</h4>
+                <h4 class="card-text text-center">Total Payable Amount</h4>
                 <hr>
                 <div class="product">
                   <img src="../../../assets/images/totalAmount.png" alt="" height="70px"/>
-                  <h5 class="card-title">10,000</h5>
+                  <h5 class="card-title">{{ loans['Total Payable'] }}</h5>
                 </div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="card-body">
-                <h4 class="card-text text-center">Total Loan</h4>
+                <h4 class="card-text text-center">Total Loan Paid</h4>
                 <hr>
                 <div class="product">
                   <img src="../../../assets/images/totalLoans.png" alt="" height="70px"/>
-                  <h5 class="card-title">30,000</h5>
+                  <h5 class="card-title">{{ loans['Total Paid'] }}</h5>
                 </div>
               </div>
             </div>
@@ -127,5 +127,14 @@
       </div>
     </div>
   </div>
+</div>
+<div *ngIf="getDashboardInfo">
+  <h2>Total Members: </h2>
+  <p>Request Loan: </p>
+  <!-- <p>Approved Loan: {{loans['Approved Loan'] }}</p>
+  <p>Rejected Loan: {{ loans['Rejected Loan'] }}</p>
+  <p>Pending loans: {{ loans['Request Loan'] }}</p>
+  <p></p>
+  <p></p> -->
 </div>
 <app-footer></app-footer>
