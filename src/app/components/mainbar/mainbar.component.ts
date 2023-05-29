@@ -10,13 +10,10 @@ import { LoansService } from 'src/app/services/loans.service';
 export class MainbarComponent implements OnInit {
   loans: any;
   constructor(public api:LoansService, private router: Router) {
-    this.getDashboardInfo()
-    this.loans = {totalCustomer:'',}
    }
 
   ngOnInit(): void {
     this.getDashboardInfo()
-    this.loans = {totalCustomer:'',}
 
   }
 
