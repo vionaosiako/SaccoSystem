@@ -14,7 +14,7 @@ export class ContributionsMerrygoroundComponent implements OnInit {
 
   constructor(private api:ContributionsService) {
     this.getMerryGoRound()
-    this.merrygoround = {id:-1, receipt_ID: '',reg_Number:'',Amount:''}
+    // this.merrygoround = {id:-1, receipt_ID: '',reg_Number:'',Amount:''}
   }
   ngOnDestroy(): void {
     throw new Error('Method not implemented.');
