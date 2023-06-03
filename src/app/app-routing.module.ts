@@ -8,6 +8,7 @@ import { MembersdetailComponent } from './components/membersdetail/membersdetail
 import { ContributionsMerrygoroundComponent } from './components/contributions-merrygoround/contributions-merrygoround.component';
 import { ContributionsMonthlysavingsComponent } from './components/contributions-monthlysavings/contributions-monthlysavings.component';
 import { MessageComponent } from './components/message/message.component';
+import { LoanRequestComponent } from './components/loan-request/loan-request.component';
 const routes: Routes = [
   { path: 'home', component: MainbarComponent },
   { path: 'adminregistration', component: AdminregistrationComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'merrygoroundcontribution', component: ContributionsMerrygoroundComponent},
   { path: 'monthlysavingscontribution', component: ContributionsMonthlysavingsComponent},
   { path: 'message', component: MessageComponent},
+  { path: 'loanrequest', component:LoanRequestComponent },
 
 ];
 
