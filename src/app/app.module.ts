@@ -18,6 +18,7 @@ import { ContributionsMerrygoroundComponent } from './components/contributions-m
 import { ContributionsMonthlysavingsComponent } from './components/contributions-monthlysavings/contributions-monthlysavings.component';
 import { LoansComponent } from './components/loans/loans.component';
 import { MessageComponent } from './components/message/message.component';
+import { LoanRequestComponent } from './components/loan-request/loan-request.component';
 
 
 
@@ -37,6 +38,7 @@ import { MessageComponent } from './components/message/message.component';
     ContributionsMonthlysavingsComponent,
     LoansComponent,
     MessageComponent,
+    LoanRequestComponent,
   ],
   imports: [
     BrowserModule,
