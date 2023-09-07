@@ -26,19 +26,14 @@
                                     </div>
                                     <div class="modal-body">
                                         <div class="mb-3">
-                                            <label for="id" class="form-label fs-4">ID</label>
-                                            <input type="text" [(ngModel)]="loans.id" class="form-control" id="reg_number"
-                                                placeholder="ID">
-                                        </div>
-                                        <div class="mb-3">
                                             <label for="reg_number" class="form-label fs-4">Registration number</label>
                                             <input type="text" [(ngModel)]="loans.reg_number" class="form-control" id="reg_number"
                                                 placeholder="Registartion Number">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="amount_requested" class="form-label fs-4">Amount Requested</label>
-                                            <input type="text" [(ngModel)]="loans.amount_requested" class="form-control" id="amount_requested"
-                                                placeholder="Amount Requested">
+                                            <label for="amount_category" class="form-label fs-4">category</label>
+                                            <input type="text" [(ngModel)]="loans.category" class="form-control" id="category"
+                                                placeholder="category">
                                         </div>
                                         <div class="mb-3">
                                             <label for="purpose" class="form-label fs-4">Purpose</label>
@@ -46,9 +41,12 @@
                                                 placeholder="Purpose">
                                         </div>
                                         <div class="mb-3">
-                                            <label for="status" class="form-label fs-4">status</label>
-                                            <input type="text" [(ngModel)]="loans.status" class="form-control" id="status"
-                                                placeholder="Status">
+                                            <label for="status" class="form-label fs-4">status : </label>
+                                                    <select id="status" name="staus" [(ngModel)] = "loans.status">
+                                                        <option value="Pending">Pending</option>
+                                                        <option value="Approved">Approved</option>
+                                                        <option value="Rejected">Rejected</option>
+                                                    </select>
                                         </div>
                                         <div class="mb-3">
                                             <label for="payment_period_years" class="form-label fs-4">Payment period</label>
@@ -82,7 +80,6 @@
                                         <th>Amount_requested</th>
                                         <th>Purpose</th>
                                         <th>status</th>
-                                        <th>Amount</th>
                                         <th>Payment Period</th>
                                     </tr>
                                 </thead>
